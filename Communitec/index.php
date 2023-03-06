@@ -8,7 +8,7 @@ if($_POST){
 <html>
 <head>
 <meta charset="utf-8">
-	<title>Projeto</title>
+	<title>Login-Communitec</title>
 	<meta charset="utf-8">
 	  <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
