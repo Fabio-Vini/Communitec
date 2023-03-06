@@ -17,31 +17,6 @@ USE `sistema_votacao`;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
---
--- Table structure for table `produtos`
---
-
-DROP TABLE IF EXISTS `produtos`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `produtos` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(220) NOT NULL,
-  `imagem` varchar(220) NOT NULL,
-  `qtd_voto` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `produtos`
---
-
-LOCK TABLES `produtos` WRITE;
-/*!40000 ALTER TABLE `produtos` DISABLE KEYS */;
-INSERT INTO `produtos` VALUES (1,'Produto 1','lula.png',6),(2,'Produto 2','dart.png',3),(3,'Produto 3','bolso.png',7);
-/*!40000 ALTER TABLE `produtos` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Dumping routines for database 'sistema_votacao'
@@ -68,18 +43,5 @@ datanasc DATE NOT NULL,
 rm VARCHAR(20) NOT NULL,
 senha VARCHAR(20) NOT NULL,
 foto VARCHAR(120) NULL);
-
-CREATE TABLE categoria(
-cd INT AUTO_INCREMENT PRIMARY KEY,
-nome VARCHAR(200));
-
-CREATE TABLE produto(
-cd INT AUTO_INCREMENT PRIMARY KEY,
-nome VARCHAR(100),
-descricao VARCHAR(200),
-valor DECIMAL(10,2),
-foto VARCHAR(200),
-id_categoria INT,
-FOREIGN KEY(id_categoria) REFERENCES categoria(cd));
 
 /*ALTER TABLE `categoria` ADD `foto` VARCHAR( 200 ) NOT NULL ;*/
