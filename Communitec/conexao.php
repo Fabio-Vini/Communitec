@@ -2,6 +2,7 @@
 	
 	$user = 'root';
 	$senha = 'usbw';
+	$senha = ' ';
 	$banco = 'sistema_votacao';
 	$server = 'localhost';
 	$con = new mysqli ($server,$user,$senha,$banco);
