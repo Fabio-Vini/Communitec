@@ -1,2 +1,2 @@
 # Communitec
-O objetivo do site é criar uma forma de comunicação entre os alunos e a instituição, de forma que não precise sempre entrar em contato com a coordenação, já que podemos apenas acessar o site e ficar a parte de tudo que está acontecendo.
+The objective of the website is to create a form of communication between students and the institution, so that we do not always need to contact the coordination, as we can just access the website and stay on top of everything that is happening.
